@@ -1,0 +1,315 @@
+
+.App {
+    text-align: center;
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 15.1%;
+    margin-top: 80px;
+    padding-top: 15px;
+    position: relative;
+    height: calc(100vh - 80px);
+    background: rgb(245, 249, 253);
+}
+main section{
+    background: #fff;
+    box-shadow: 5px 5px 5px #eee;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+}
+section h1{
+    flex-grow: 2;
+}
+.createbutton{
+    display: flex;
+    background-color: rgb(160, 209, 244);
+    flex-grow: 0.5;
+    
+    height: 50px;
+border-radius: 25px;
+width: 100px;
+align-content: space-between;
+justify-content: space-between;
+}
+.createbutton button {
+    background-color: rgb(130, 193, 238);
+    border-radius:50%;
+
+}
+.createbutton div {
+    text-align: center;
+    margin-right: 50px;
+  
+}
+aside {
+    top:0px;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+}
+.formdiv{
+    display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+.mydiv{
+    padding: 10px 20px 20px 20px;
+    height:10%;
+}
+.login{
+    display: flex;
+    height: 100%;
+    padding: 3%;
+}
+
+.logindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-left: 15%;
+}
+.username{
+    
+    border-radius: 5px;
+    opacity: 1;
+    margin: 2%;
+}
+.username input{
+    border: 1px;
+    border-radius: 2px;
+    
+ height: 30%;
+    padding: 10px 10px;
+    background: rgb(245, 249, 253);
+}
+.username div{
+    margin: 8%;
+}
+.pluspan{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+display: flex;
+align-items: center;
+background:#03AEEE;
+color: white;
+}
+.password{
+    border-radius: 5px;
+    opacity: 1;
+}
+.password input{
+    border: 1px;
+    border-radius: 2px;
+    
+ height: 30%;
+    padding: 10px 10px;
+    background: rgb(245, 249, 253);
+}
+.password div{
+margin: 8%;
+}
+.loginbutton{
+    margin: 8%;
+    
+    background: #03AEEE 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+/* form div div{
+display: flex;
+flex-direction: column;
+padding: 10px 10px;
+width: 33.33%;
+}
+input, select{
+    padding: 10px 10px;
+    background: rgb(245, 249, 253);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} */
+/* label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin: 1px;
+} */
+
+.myform{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    border: 1px;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.button1{
+width: 10%;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+box-shadow:3px 3px 3px #eee ;
+background-color: rgb(68, 194, 194);
+    }
+   
+#create{
+    color: white;
+   background-color:  rgb(75, 164, 224);}
+.browse{
+    
+    width: 100%;
+    background: rgb(245, 249, 253);
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 2px;
+  }
+
+/* #eprof{
+    
+    width: 75px;
+} */
+nav{
+    margin-top: 29px;
+}
+.text{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+#logo{
+    background-color: white;
+    border-radius: 49%;
+    padding: 5px;
+    
+}
+#logodiv{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+nav{
+    background-color: rgb(75, 164, 224);
+    height: 50px;
+    border-top-left-radius:30px 50% ;
+    border-bottom-left-radius:30px 50% ;
+
+}
+a{
+    text-decoration: none;
+}
+table{
+    margin: 25px;
+    
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.tablehead{
+    background: #EAF9FF;
+    border-radius: 5px;
+   
+    
+}
+.tablehead th{
+    font-weight: 500;
+    
+    
+    height: 50px;
+    
+}
+tr{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+tr th, tr td{
+    padding: 1.5%;
+    width: 15%;
+}
+table, tr, td{
+    border:none;
+}
+td{
+    display: flex;
+    justify-content: center;
+}
+.Probation{
+    border-radius: 10px;
+    background: #F5ECB8;
+    width: 65%;
+    
+    text-align: center;
+}
+.Active{
+    border-radius: 10px;
+    background: #D3F4BE;
+    width: 65%;
+    
+    text-align: center;
+}
+.Inactive{
+    border-radius: 10px;
+    background: #FFBFBF;
+    width: 65%;
+    
+    text-align: center;
+}
+tbody tr{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+
+box-shadow: 0px 3px 6px #9D9D9D29;
+border-radius: 5px;
+opacity: 1;
+}
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: 5px 5px 5px #eee;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 15%;
+}
+.firstdiv{
+    width: 16.6%;
+}
+.firstdiv div p{
+    text-align: left;
+font: normal normal 600 16px/22px Nunito;
+letter-spacing: 0px;
+color: #8B8D9D;
+opacity: 1;
+}
+.firstdiv div{
+    text-align: left;
+font: normal normal 600 16px/22px Nunito;
+letter-spacing: 0px;
+color: #434552;
+opacity: 1;
+}
+div .Active{
+    padding: 2%;
+}
+div .Inactive{
+    padding: 2%;
+}
+div .Probation{
+    padding: 2%;
+}

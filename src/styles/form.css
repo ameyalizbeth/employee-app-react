@@ -1,0 +1,55 @@
+.details{
+    display: flex;
+    flex-wrap: wrap;
+}
+.data{
+    width:33.33%;
+    padding: 5px;
+}
+.details label{
+    display: block;
+    padding: 5px;
+}
+.details input{
+    width:85%;
+    margin:10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form select{
+    width:85%;
+    margin:10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(99, 99, 99);
+}
+.createb{
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+.cancel{
+    background-color: white;
+}
+.buttons{
+    display: flex;
+    width:25%;
+}
+.buttons button{
+    height: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:100%;
+    margin:10px;
+    cursor: pointer;
+}
+.emp-form{
+    background: #fff;
+    box-shadow: 5px 5px 5px #eee;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 15px;
+}
