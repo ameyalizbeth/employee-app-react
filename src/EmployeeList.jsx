@@ -133,9 +133,10 @@ function EmployeeList() {
         
       
         {!isShown && <CreateEmployee  handleClick={handleClick} />}
-        {isOpen && <Popup id={id}
+        {isOpen && <Popup 
       content={<>
         <p>ARE YOU SURE?</p>
+        <p>Do you really want to delete the employee?</p>
         <button className='delete'  onClick={(e)=>{deleteitem(id);togglePopup()}}>confirm</button>
         <button  className='cancelbutton' onClick={(e)=>togglePopup()}>cancel</button>
       </>}
