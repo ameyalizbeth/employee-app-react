@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import InputField from './components/InputField';
+
 import Button from './components/Button';
 import { useEffect, useState } from 'react';
 import { useNavigate ,Link} from 'react-router-dom';
@@ -9,6 +9,7 @@ import CreateEmployee from './CreateEmployee';
 import {useGetEmployeeQuery, useDeleteEmployeeMutation} from './api-client/index'
 import { MdOutlineDelete, MdOutlineEdit } from 'react-icons/md';
 import Popup from './pop';
+import InputSelect from './components/InputSelect';
 function EmployeeList() {
   const [isOpen, setIsOpen] = useState(false);
   const [id,setId] = useState('');
@@ -134,7 +135,7 @@ function EmployeeList() {
         {!isShown && <CreateEmployee  handleClick={handleClick} />}
         {isOpen && <Popup id={id}
       content={<>
-        <p>are u sure ??</p>
+        <p>ARE YOU SURE?</p>
         <button className='delete'  onClick={(e)=>{deleteitem(id);togglePopup()}}>confirm</button>
         <button  className='cancelbutton' onClick={(e)=>togglePopup()}>cancel</button>
       </>}

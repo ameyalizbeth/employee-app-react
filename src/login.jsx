@@ -4,7 +4,7 @@ import InputField from './components/InputField';
 import Button from './components/Button';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles/CreateEmployee.css';
+import './styles/login.css';
 function Login() {
  const navigate = useNavigate()
   return (
@@ -13,11 +13,17 @@ function Login() {
       <img alt='no image' src='sideImg.png'/>
      </div>
      <div className='logindiv'>
-      <img alt='not available' src='kv_logo.png'/>
-      <InputField label="username" onChange={()=>{}} type="text" style={"username"}/>
-      <InputField label="password" onChange={()=>{}} type="password" style={"password"}/>
-      <Button label="Login" handleClick={()=>navigate('/employeelist') } style={"loginbutton"}/>
-
+      <div><img alt='not available' src='http://localhost:3000/kv_logo.png'/></div>
+      
+      <div>
+          <input type="text" class="inputText" placeholder='username'/>
+          
+      </div>
+      <div>
+        <input type="text" class="inputText" placeholder='password'/>
+        
+      </div>
+      <button class="inputbutton" onClick={(e)=>{navigate('/employeelist')}}>Login </button>
      </div>
            
       
