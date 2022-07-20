@@ -8,7 +8,13 @@ import './styles/CreateEmployee.css';
 import CreateEmployee from './CreateEmployee';
 import {useGetEmployeeQuery, useDeleteEmployeeMutation} from './api-client/index'
 import { MdOutlineDelete, MdOutlineEdit } from 'react-icons/md';
+import Popup from './pop';
 function EmployeeList() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [id,setId] = useState('');
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
   const navigate = useNavigate()
     const [isShown, setIsShown] = useState(true);
@@ -104,7 +110,7 @@ function EmployeeList() {
                   <td>
                     <div>
                         
-                            <span onClick={(e)=>{ e.stopPropagation();deleteitem(element.id)}}><MdOutlineDelete/></span>
+                            <span  onClick={(e)=>{ e.stopPropagation();setId(element.id);togglePopup()}}><MdOutlineDelete/></span>
                         
                        
                            <span onClick={(e)=>{e.stopPropagation();edititem(element.id)}}><MdOutlineEdit/></span>
@@ -126,6 +132,14 @@ function EmployeeList() {
         
       
         {!isShown && <CreateEmployee  handleClick={handleClick} />}
+        {isOpen && <Popup id={id}
+      content={<>
+        <p>are u sure ??</p>
+        <button onClick={(e)=>{deleteitem(id);togglePopup()}}>confirm</button>
+        <button onClick={(e)=>togglePopup()}>cancel</button>
+      </>}
+      handleClose={togglePopup}
+    />}
     </div>
   );
 }

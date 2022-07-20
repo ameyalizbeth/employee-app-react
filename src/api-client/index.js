@@ -31,8 +31,8 @@ export const employeeApi = createApi({
         // Include the entire post object as the body of the request
         body: initialPost
       }),
-      invalidatesTags:['employee'],
-      invalidatesTags:['employeeid']
+      invalidatesTags:['employee','employeeid'],
+      
     }),
     deleteEmployee:builder.mutation({
       query:id=>({
