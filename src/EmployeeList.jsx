@@ -135,8 +135,8 @@ function EmployeeList() {
         {isOpen && <Popup id={id}
       content={<>
         <p>are u sure ??</p>
-        <button onClick={(e)=>{deleteitem(id);togglePopup()}}>confirm</button>
-        <button onClick={(e)=>togglePopup()}>cancel</button>
+        <button className='delete'  onClick={(e)=>{deleteitem(id);togglePopup()}}>confirm</button>
+        <button  className='cancelbutton' onClick={(e)=>togglePopup()}>cancel</button>
       </>}
       handleClose={togglePopup}
     />}

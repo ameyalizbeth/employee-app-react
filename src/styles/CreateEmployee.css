@@ -313,3 +313,23 @@ div .Inactive{
 div .Probation{
     padding: 2%;
 }
+.delete{
+    width: 117px;
+    height: 35px;
+    /* UI Properties */
+    background: #03AEEE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #B0E6FA;
+    border-radius: 3px;
+    opacity: 1;
+    margin-right: 10px;
+}
+.cancelbutton{
+    width: 109px;
+height: 35px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #63667A29;
+border: 1px solid #63667A;
+border-radius: 3px;
+opacity: 1;
+}
