@@ -28,8 +28,9 @@ section h1{
     flex-grow: 2;
 }
 .createbutton{
+    
     display: flex;
-    background-color: rgb(160, 209, 244);
+    background-color:#EAF9FF ;
     flex-grow: 0.5;
     
     height: 50px;
@@ -39,7 +40,7 @@ align-content: space-between;
 justify-content: space-between;
 }
 .createbutton button {
-    background-color: rgb(130, 193, 238);
+    background-color: #03AEEE;
     border-radius:50%;
 
 }
@@ -189,7 +190,7 @@ nav{
     align-items: center;
 }
 nav{
-    background-color: rgb(75, 164, 224);
+    background-color: #03AEEE;
     height: 50px;
     border-top-left-radius:30px 50% ;
     border-bottom-left-radius:30px 50% ;
